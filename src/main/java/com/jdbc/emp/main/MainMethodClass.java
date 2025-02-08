@@ -1,4 +1,5 @@
 package com.jdbc.emp.main;
+import com.jdbc.emp.model.Employee;
 import com.jdbc.emp.service.EmployeeServiceImpl;
 public class MainMethodClass {
 	public static void main(String[] args) {
@@ -8,12 +9,12 @@ public class MainMethodClass {
 		System.out.println(service.getEmployees());
 		
 		//searching employee data by id 14
-//		Employee emp=service.getEmployeeById(14);
-//		if(emp!=null) {
-//		System.out.println(emp);
-//		}else {
-//			System.err.println();
-//		}
+		Employee emp=service.getEmployeeById(14);
+		if(emp!=null) {
+		System.out.println(emp);
+		}else {
+			System.err.println();
+		}
 		
 		//adding new employee
 		//service.addEmployee(new Employee("Anand",8900,"dev"));
